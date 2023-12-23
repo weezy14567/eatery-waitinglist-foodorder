@@ -7,7 +7,127 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+.btn {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  background-color: rgba(128, 128, 128, 0.311) !important;
+}
+
+/* styles.css */
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Border between rows */
+  border-left: 1px solid #ddd; /* Border at the beginning of every content */
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+.custom-table td:first-child {
+  border-left: none; /* Remove left border for the first column */
+}
+
+.custom-table td:last-child {
+  border-right: none; /* Remove right border for the last column */
+}
+
+.BG {
+  background-color: rgba(0, 128, 0, 0.158) !important;
+}
+.BG1 {
+  background-color: rgb(23, 52, 23) !important;
+  color:white !important;
+}
+
+.opac {
+  background-color: grey !important;
+}
+
+.cartopen {
+  position: relative !important;
+  transition: 0.9s ease-in-out !important;
+}
+.cartopen2 {
+  background-color: rgba(0, 0, 0, 0.264) !important;
+  z-index: 9999999999999;
+  transition: 0.9s ease-in-out !important;
+}
+
+.item-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr ) !important;
+  gap: 16px !important;
+  grid-template-rows: auto;
+}
+
+.item-image {
+  width: 100% !important;
+  height: 160px !important;
+}
+
+.item-details {
+  line-height: 1 !important;
+  text-transform: capitalize;
+}
+
+
+.text-outline {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.shadowOnline {
+  
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+@keyframes blinkAnimation {
+  0%,
+  50%,
+  100% {
+    opacity: 0.5; /* Adjust opacity as needed */
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+.custom-blink {
+  animation: blinkAnimation 2s infinite !important; 
 }
